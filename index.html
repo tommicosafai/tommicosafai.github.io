@@ -49,19 +49,31 @@
         transform: translateY(-3px);
         box-shadow: 0 6px 12px rgba(0,0,0,0.2);
       }
+      iframe {
+        border-radius: 12px;
+        width: 100%;
+        height: 352px;
+        border: none;
+        margin-bottom: 30px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <h1>tommi cosa linki</h1>
-      <a href="https://open.spotify.com/playlist/0rQNRObQ3vAuV0k3qXlqQg?si=17a90f64025a4616" target="_blank">
-        🎵 La playlist con tutte le song abbinate ai piatti
-      </a>
+      <!-- Player Spotify -->
+      <iframe data-testid="embed-iframe"
+              src="https://open.spotify.com/embed/playlist/0rQNRObQ3vAuV0k3qXlqQg?utm_source=generator" 
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+      </iframe>
+      <!-- Bottoni -->
       <a href="https://www.tiktok.com/@tommicosafai?_t=ZN-8zOtBLsPCVi&_r=1" target="_blank">
-        📱 Quel social con la T
+        📱 quel social con la T
       </a>
       <a href="mailto:tommaso.bignu@gmail.com">
-        ✉️ Sii il primo brand o artista a monetizzarmi
+        ✉️ sii il primo brand o artista a monetizzarmi
       </a>
     </div>
   </body>
