@@ -7,18 +7,25 @@
     <style>
       body {
         margin: 0;
-        font-family: system-ui, -apple-system, Arial, sans-serif;
-        background: linear-gradient(135deg, #4facfe, #0052d4);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background: linear-gradient(135deg, #4facfe, #00f2fe, #43e97b, #38f9d7, #fa709a);
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         min-height: 100vh;
+      }
+      @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
       }
       .container {
         text-align: center;
         width: 100%;
         max-width: 600px;
-        padding: 20px;
+        padding: 40px 20px 20px;
       }
       h1 {
         color: white;
@@ -47,15 +54,4 @@
   <body>
     <div class="container">
       <h1>tommi cosa linki</h1>
-      <a href="https://open.spotify.com/playlist/0rQNRObQ3vAuV0k3qXlqQg?si=17a90f64025a4616" target="_blank">
-        🎵 La playlist con tutte le song abbinate ai piatti
-      </a>
-      <a href="https://www.tiktok.com/@tommicosafai?_t=ZN-8zOtBLsPCVi&_r=1" target="_blank">
-        📱 Quel social con la T
-      </a>
-      <a href="mailto:tommaso.bignu@gmail.com">
-        ✉️ Sii il primo brand o artista a monetizzarmi
-      </a>
-    </div>
-  </body>
-</html>
+      <a href="https://open.spotif
